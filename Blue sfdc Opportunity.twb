@@ -1,0 +1,1385 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.20.0214.2236                               -->
+<workbook original-version='10.5' source-build='10.5.24 (10500.20.0214.2236)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='BLUE SFDC OPPORTUNITIES' inline='true' name='sqlproxy.1wfe28i15tf5bo13zkxdr0v0yi6w' version='10.5'>
+      <repository-location id='BLUESFDCOPPORTUNITIES' path='/datasources' revision='1.2' />
+      <connection channel='https' class='sqlproxy' dbname='BLUESFDCOPPORTUNITIES' directory='/dataserver' port='443' server='tableau-bi-m.mitel.com' username='ITApps'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>AccountId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AccountId]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>AccountId</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <caption>Account Id</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AccountName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AccountName]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>AccountName</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AccountSicCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AccountSicCode]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>AccountSicCode</remote-alias>
+            <ordinal>44</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>BizibleOpportunityAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BizibleOpportunityAmount]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>BizibleOpportunityAmount</remote-alias>
+            <ordinal>32</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>BookingAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BookingAmount]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>BookingAmount</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <caption>Booking Amount</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>BookingAmount_Converted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BookingAmount_Converted]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>BookingAmount_Converted</remote-alias>
+            <ordinal>42</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLOSEDATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLOSEDATE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CLOSEDATE</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Closedate</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>date</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLOUD_TCV__C</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLOUD_TCV__C]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CLOUD_TCV__C</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Cloud_Tcv__C</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Competitors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Competitors]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Competitors</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>500</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ContactEmail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ContactEmail]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ContactEmail</remote-alias>
+            <ordinal>57</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreateDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CreateDate]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CreateDate</remote-alias>
+            <ordinal>27</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreatedBy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CreatedBy]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CreatedBy</remote-alias>
+            <ordinal>37</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>150</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentVendors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CurrentVendors]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CurrentVendors</remote-alias>
+            <ordinal>63</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>250</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DealType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DealType]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DealType</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <caption>Deal Type</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>DistyOppValue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DistyOppValue]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DistyOppValue</remote-alias>
+            <ordinal>38</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>DistyOppValue_Converted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DistyOppValue_Converted]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DistyOppValue_Converted</remote-alias>
+            <ordinal>43</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FieldMktgMngr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FieldMktgMngr]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>FieldMktgMngr</remote-alias>
+            <ordinal>59</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstCampaign</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FirstCampaign]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>FirstCampaign</remote-alias>
+            <ordinal>62</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>250</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ForecastCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ForecastCategory]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ForecastCategory</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <caption>Forecast Category</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ForecastRegion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ForecastRegion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ForecastRegion</remote-alias>
+            <ordinal>33</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ForecastSubRegion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ForecastSubRegion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ForecastSubRegion</remote-alias>
+            <ordinal>34</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HeritageId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HeritageId]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>HeritageId</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <caption>Heritage Id</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISCLOSED</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISCLOSED]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ISCLOSED</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Isclosed</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISRRegion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISRRegion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ISRRegion</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JointMarketingFunds</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JointMarketingFunds]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>JointMarketingFunds</remote-alias>
+            <ordinal>58</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>250</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LeadSourceDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LeadSourceDescription]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>LeadSourceDescription</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <caption>Lead Source Description</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LeadSource</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LeadSource]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>LeadSource</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Lead Source</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <caption>Name</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NextStepDateChange</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[NextStepDateChange]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>NextStepDateChange</remote-alias>
+            <ordinal>36</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NodeEmployeeSize</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NodeEmployeeSize]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>NodeEmployeeSize</remote-alias>
+            <ordinal>40</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NodeIndustry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NodeIndustry]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>NodeIndustry</remote-alias>
+            <ordinal>41</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>65</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNERFULL_NAME__C</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OWNERFULL_NAME__C]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>OWNERFULL_NAME__C</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <caption>Ownerfull_Name__C</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNERROLE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OWNERROLE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>OWNERROLE</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <caption>Ownerrole</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OppType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OppType]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>OppType</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <caption>Opp Type</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerRole</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OwnerRole]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>OwnerRole</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <caption>Owner Role</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PartnerAddedDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[PartnerAddedDate]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PartnerAddedDate</remote-alias>
+            <ordinal>35</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PartnerSelectedCampaign</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PartnerSelectedCampaign]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PartnerSelectedCampaign</remote-alias>
+            <ordinal>60</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>250</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrimaryCampaignSource</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrimaryCampaignSource]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PrimaryCampaignSource</remote-alias>
+            <ordinal>61</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>250</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrimaryDistributor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrimaryDistributor]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PrimaryDistributor</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <caption>Primary Distributor</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrimaryPartner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrimaryPartner]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PrimaryPartner</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>Primary Partner</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductInterest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductInterest]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ProductInterest</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <caption>Product Interest</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSuiteCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductSuiteCategory]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ProductSuiteCategory</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <caption>Product Suite Category</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Products]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Products</remote-alias>
+            <ordinal>56</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RecordType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RecordType]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RecordType</remote-alias>
+            <ordinal>26</ordinal>
+            <layered>true</layered>
+            <caption>Record Type</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>RevenueAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RevenueAmount]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RevenueAmount</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <caption>Revenue Amount</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC1Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC1Description]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC1Description</remote-alias>
+            <ordinal>51</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC1</remote-alias>
+            <ordinal>50</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC2Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC2Description]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC2Description</remote-alias>
+            <ordinal>49</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC2]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC2</remote-alias>
+            <ordinal>48</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC3Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC3Description]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC3Description</remote-alias>
+            <ordinal>47</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC3]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC3</remote-alias>
+            <ordinal>46</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIC4Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SIC4Description]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SIC4Description</remote-alias>
+            <ordinal>45</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SICIndustry1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SICIndustry1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SICIndustry1</remote-alias>
+            <ordinal>52</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SICIndustry2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SICIndustry2]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SICIndustry2</remote-alias>
+            <ordinal>53</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAGENAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STAGENAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>STAGENAME</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Stagename</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubAgent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SubAgent]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SubAgent</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <caption>Sub Agent</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubRegion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SubRegion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SubRegion</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <caption>Sub Region</caption>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Territory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Territory]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Territory</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>TotalSeats</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalSeats]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TotalSeats</remote-alias>
+            <ordinal>39</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vertical]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Vertical</remote-alias>
+            <ordinal>55</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WonLostReason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WonLostReason]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>WonLostReason</remote-alias>
+            <ordinal>54</ordinal>
+            <layered>true</layered>
+            <family>TABLEAU_B_SFDC_OPPORTUNITY</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;LROOT&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;10.5&apos; formatted-name=&apos;BLUE SFDC OPPORTUNITIES (local copy)&apos; inline=&apos;true&apos; version=&apos;10.5&apos; xml:base=&apos;https://tableau-bi-m.mitel.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;BLUESFDCOPPORTUNITIES&apos; path=&apos;/datasources&apos; revision=&apos;1.2&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;BLUESFDCOPPORTUNITIES&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;tableau-bi-m.mitel.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[AccountId]&apos; value=&apos;[sqlproxy].[AccountId]&apos; /&gt;&#10;      &lt;map key=&apos;[AccountName]&apos; value=&apos;[sqlproxy].[AccountName]&apos; /&gt;&#10;      &lt;map key=&apos;[AccountSicCode]&apos; value=&apos;[sqlproxy].[AccountSicCode]&apos; /&gt;&#10;      &lt;map key=&apos;[BizibleOpportunityAmount]&apos; value=&apos;[sqlproxy].[BizibleOpportunityAmount]&apos; /&gt;&#10;      &lt;map key=&apos;[BookingAmount]&apos; value=&apos;[sqlproxy].[BookingAmount]&apos; /&gt;&#10;      &lt;map key=&apos;[BookingAmount_Converted]&apos; value=&apos;[sqlproxy].[BookingAmount_Converted]&apos; /&gt;&#10;      &lt;map key=&apos;[CLOSEDATE]&apos; value=&apos;[sqlproxy].[CLOSEDATE]&apos; /&gt;&#10;      &lt;map key=&apos;[CLOUD_TCV__C]&apos; value=&apos;[sqlproxy].[CLOUD_TCV__C]&apos; /&gt;&#10;      &lt;map key=&apos;[Competitors]&apos; value=&apos;[sqlproxy].[Competitors]&apos; /&gt;&#10;      &lt;map key=&apos;[ContactEmail]&apos; value=&apos;[sqlproxy].[ContactEmail]&apos; /&gt;&#10;      &lt;map key=&apos;[CreateDate]&apos; value=&apos;[sqlproxy].[CreateDate]&apos; /&gt;&#10;      &lt;map key=&apos;[CreatedBy]&apos; value=&apos;[sqlproxy].[CreatedBy]&apos; /&gt;&#10;      &lt;map key=&apos;[CurrentVendors]&apos; value=&apos;[sqlproxy].[CurrentVendors]&apos; /&gt;&#10;      &lt;map key=&apos;[DealType]&apos; value=&apos;[sqlproxy].[DealType]&apos; /&gt;&#10;      &lt;map key=&apos;[DistyOppValue]&apos; value=&apos;[sqlproxy].[DistyOppValue]&apos; /&gt;&#10;      &lt;map key=&apos;[DistyOppValue_Converted]&apos; value=&apos;[sqlproxy].[DistyOppValue_Converted]&apos; /&gt;&#10;      &lt;map key=&apos;[FieldMktgMngr]&apos; value=&apos;[sqlproxy].[FieldMktgMngr]&apos; /&gt;&#10;      &lt;map key=&apos;[FirstCampaign]&apos; value=&apos;[sqlproxy].[FirstCampaign]&apos; /&gt;&#10;      &lt;map key=&apos;[ForecastCategory]&apos; value=&apos;[sqlproxy].[ForecastCategory]&apos; /&gt;&#10;      &lt;map key=&apos;[ForecastRegion]&apos; value=&apos;[sqlproxy].[ForecastRegion]&apos; /&gt;&#10;      &lt;map key=&apos;[ForecastSubRegion]&apos; value=&apos;[sqlproxy].[ForecastSubRegion]&apos; /&gt;&#10;      &lt;map key=&apos;[HeritageId]&apos; value=&apos;[sqlproxy].[HeritageId]&apos; /&gt;&#10;      &lt;map key=&apos;[ID]&apos; value=&apos;[sqlproxy].[ID]&apos; /&gt;&#10;      &lt;map key=&apos;[ISCLOSED]&apos; value=&apos;[sqlproxy].[ISCLOSED]&apos; /&gt;&#10;      &lt;map key=&apos;[ISRRegion]&apos; value=&apos;[sqlproxy].[ISRRegion]&apos; /&gt;&#10;      &lt;map key=&apos;[JointMarketingFunds]&apos; value=&apos;[sqlproxy].[JointMarketingFunds]&apos; /&gt;&#10;      &lt;map key=&apos;[LeadSourceDescription]&apos; value=&apos;[sqlproxy].[LeadSourceDescription]&apos; /&gt;&#10;      &lt;map key=&apos;[LeadSource]&apos; value=&apos;[sqlproxy].[LeadSource]&apos; /&gt;&#10;      &lt;map key=&apos;[NAME]&apos; value=&apos;[sqlproxy].[NAME]&apos; /&gt;&#10;      &lt;map key=&apos;[NextStepDateChange]&apos; value=&apos;[sqlproxy].[NextStepDateChange]&apos; /&gt;&#10;      &lt;map key=&apos;[NodeEmployeeSize]&apos; value=&apos;[sqlproxy].[NodeEmployeeSize]&apos; /&gt;&#10;      &lt;map key=&apos;[NodeIndustry]&apos; value=&apos;[sqlproxy].[NodeIndustry]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[OWNERFULL_NAME__C]&apos; value=&apos;[sqlproxy].[OWNERFULL_NAME__C]&apos; /&gt;&#10;      &lt;map key=&apos;[OWNERROLE]&apos; value=&apos;[sqlproxy].[OWNERROLE]&apos; /&gt;&#10;      &lt;map key=&apos;[OppType]&apos; value=&apos;[sqlproxy].[OppType]&apos; /&gt;&#10;      &lt;map key=&apos;[OwnerRole]&apos; value=&apos;[sqlproxy].[OwnerRole]&apos; /&gt;&#10;      &lt;map key=&apos;[PartnerAddedDate]&apos; value=&apos;[sqlproxy].[PartnerAddedDate]&apos; /&gt;&#10;      &lt;map key=&apos;[PartnerSelectedCampaign]&apos; value=&apos;[sqlproxy].[PartnerSelectedCampaign]&apos; /&gt;&#10;      &lt;map key=&apos;[PrimaryCampaignSource]&apos; value=&apos;[sqlproxy].[PrimaryCampaignSource]&apos; /&gt;&#10;      &lt;map key=&apos;[PrimaryDistributor]&apos; value=&apos;[sqlproxy].[PrimaryDistributor]&apos; /&gt;&#10;      &lt;map key=&apos;[PrimaryPartner]&apos; value=&apos;[sqlproxy].[PrimaryPartner]&apos; /&gt;&#10;      &lt;map key=&apos;[ProductInterest]&apos; value=&apos;[sqlproxy].[ProductInterest]&apos; /&gt;&#10;      &lt;map key=&apos;[ProductSuiteCategory]&apos; value=&apos;[sqlproxy].[ProductSuiteCategory]&apos; /&gt;&#10;      &lt;map key=&apos;[Products]&apos; value=&apos;[sqlproxy].[Products]&apos; /&gt;&#10;      &lt;map key=&apos;[RecordType]&apos; value=&apos;[sqlproxy].[RecordType]&apos; /&gt;&#10;      &lt;map key=&apos;[Region]&apos; value=&apos;[sqlproxy].[Region]&apos; /&gt;&#10;      &lt;map key=&apos;[RevenueAmount]&apos; value=&apos;[sqlproxy].[RevenueAmount]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC1Description]&apos; value=&apos;[sqlproxy].[SIC1Description]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC1]&apos; value=&apos;[sqlproxy].[SIC1]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC2Description]&apos; value=&apos;[sqlproxy].[SIC2Description]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC2]&apos; value=&apos;[sqlproxy].[SIC2]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC3Description]&apos; value=&apos;[sqlproxy].[SIC3Description]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC3]&apos; value=&apos;[sqlproxy].[SIC3]&apos; /&gt;&#10;      &lt;map key=&apos;[SIC4Description]&apos; value=&apos;[sqlproxy].[SIC4Description]&apos; /&gt;&#10;      &lt;map key=&apos;[SICIndustry1]&apos; value=&apos;[sqlproxy].[SICIndustry1]&apos; /&gt;&#10;      &lt;map key=&apos;[SICIndustry2]&apos; value=&apos;[sqlproxy].[SICIndustry2]&apos; /&gt;&#10;      &lt;map key=&apos;[STAGENAME]&apos; value=&apos;[sqlproxy].[STAGENAME]&apos; /&gt;&#10;      &lt;map key=&apos;[SubAgent]&apos; value=&apos;[sqlproxy].[SubAgent]&apos; /&gt;&#10;      &lt;map key=&apos;[SubRegion]&apos; value=&apos;[sqlproxy].[SubRegion]&apos; /&gt;&#10;      &lt;map key=&apos;[Territory]&apos; value=&apos;[sqlproxy].[Territory]&apos; /&gt;&#10;      &lt;map key=&apos;[TotalSeats]&apos; value=&apos;[sqlproxy].[TotalSeats]&apos; /&gt;&#10;      &lt;map key=&apos;[Vertical]&apos; value=&apos;[sqlproxy].[Vertical]&apos; /&gt;&#10;      &lt;map key=&apos;[WonLostReason]&apos; value=&apos;[sqlproxy].[WonLostReason]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Account Id&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[AccountId]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Booking Amount&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[BookingAmount]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Closedate&apos; datatype=&apos;date&apos; datatype-customized=&apos;true&apos; default-type=&apos;ordinal&apos; name=&apos;[CLOSEDATE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cloud_Tcv__C&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CLOUD_TCV__C]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Deal Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[DealType]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Forecast Category&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[ForecastCategory]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Heritage Id&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[HeritageId]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Isclosed&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[ISCLOSED]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Lead Source Description&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[LeadSourceDescription]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Lead Source&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[LeadSource]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[NAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Ownerfull_Name__C&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[OWNERFULL_NAME__C]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Ownerrole&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[OWNERROLE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Opp Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[OppType]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Owner Role&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[OwnerRole]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Primary Distributor&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PrimaryDistributor]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Primary Partner&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PrimaryPartner]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Product Interest&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[ProductInterest]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Product Suite Category&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[ProductSuiteCategory]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Record Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[RecordType]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Revenue Amount&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[RevenueAmount]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Stagename&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[STAGENAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Sub Agent&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[SubAgent]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Sub Region&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[SubRegion]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.678571&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.321429&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;sqlserver&apos; version=&apos;9.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>false</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Account Id' datatype='string' default-type='nominal' layered='true' name='[AccountId]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[AccountName]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[AccountSicCode]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[BizibleOpportunityAmount]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Booking Amount' datatype='real' default-type='quantitative' layered='true' name='[BookingAmount]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[BookingAmount_Converted]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='Closedate' datatype='date' datatype-customized='true' default-type='ordinal' layered='true' name='[CLOSEDATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' caption='Cloud_Tcv__C' datatype='string' default-type='nominal' layered='true' name='[CLOUD_TCV__C]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Competitors]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[ContactEmail]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[CreateDate]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[CreatedBy]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[CurrentVendors]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Deal Type' datatype='string' default-type='nominal' layered='true' name='[DealType]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[DistyOppValue]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[DistyOppValue_Converted]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[FieldMktgMngr]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[FirstCampaign]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Forecast Category' datatype='string' default-type='nominal' layered='true' name='[ForecastCategory]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[ForecastRegion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[ForecastSubRegion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Heritage Id' datatype='string' default-type='nominal' layered='true' name='[HeritageId]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Isclosed' datatype='string' default-type='nominal' layered='true' name='[ISCLOSED]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[ISRRegion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[JointMarketingFunds]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Lead Source Description' datatype='string' default-type='nominal' layered='true' name='[LeadSourceDescription]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Lead Source' datatype='string' default-type='nominal' layered='true' name='[LeadSource]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Name' datatype='string' default-type='nominal' layered='true' name='[NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[NextStepDateChange]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[NodeEmployeeSize]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[NodeIndustry]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' caption='Ownerfull_Name__C' datatype='string' default-type='nominal' layered='true' name='[OWNERFULL_NAME__C]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Ownerrole' datatype='string' default-type='nominal' layered='true' name='[OWNERROLE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Opp Type' datatype='string' default-type='nominal' layered='true' name='[OppType]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Owner Role' datatype='string' default-type='nominal' layered='true' name='[OwnerRole]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[PartnerAddedDate]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[PartnerSelectedCampaign]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[PrimaryCampaignSource]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Primary Distributor' datatype='string' default-type='nominal' layered='true' name='[PrimaryDistributor]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Primary Partner' datatype='string' default-type='nominal' layered='true' name='[PrimaryPartner]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Product Interest' datatype='string' default-type='nominal' layered='true' name='[ProductInterest]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Product Suite Category' datatype='string' default-type='nominal' layered='true' name='[ProductSuiteCategory]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Products]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Record Type' datatype='string' default-type='nominal' layered='true' name='[RecordType]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Revenue Amount' datatype='real' default-type='quantitative' layered='true' name='[RevenueAmount]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC1Description]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC1]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC2Description]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC2]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC3Description]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC3]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SIC4Description]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SICIndustry1]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[SICIndustry2]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Stagename' datatype='string' default-type='nominal' layered='true' name='[STAGENAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Sub Agent' datatype='string' default-type='nominal' layered='true' name='[SubAgent]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Sub Region' datatype='string' default-type='nominal' layered='true' name='[SubRegion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Territory]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[TotalSeats]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Vertical]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[WonLostReason]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.679945' measure-ordering='alphabetic' measure-percentage='0.320055' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>
